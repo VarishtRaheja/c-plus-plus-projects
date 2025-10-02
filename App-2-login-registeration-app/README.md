@@ -1,5 +1,5 @@
 ﻿# App-2 Login Registration Console Application
----
+
 
 ## Overview
 This command-line tool lets a single user register and then log in using stored credentials. 
