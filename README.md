@@ -23,6 +23,7 @@ The purpose of this repo is to learn, experiment with, and showcase modern C++ d
 ## 🕹️ Project 1: Number Guessing Game
 
 ### 📖 Description
+
 The **Number Guessing Game** is a simple console-based application where:
 - The program generates a random number within a defined range.
 - The player tries to guess the number.
@@ -33,6 +34,7 @@ The **Number Guessing Game** is a simple console-based application where:
   - Average attempts across multiple sessions
 
 ### 🔑 Key Concepts Demonstrated
+
 - **Random number generation** using `<random>`.
 - **Dynamic arrays (`std::vector`)** for storing per-game statistics such as attempts, game outcomes, or execution results.
 - **Returning multiple values** — game functions return both status and number of attempts packaged neatly in a `std::tuple`.
@@ -42,6 +44,7 @@ The **Number Guessing Game** is a simple console-based application where:
 ---
 
 ## 📊 Game Statistics
+
 Game statistics are maintained using `std::vector` where each game’s result is appended.  
 This allows features like:
 - Tracking win/loss ratio.
@@ -50,9 +53,11 @@ This allows features like:
 ## Project 2: Login Registration Console Application
 
 ### 📖 Description/Overview
+
 The **Login&Registration App** lets a single user register and then log in using stored credentials. Data is kept in a CSV file. Passwords use a simple Caesar cipher (letters shifted by 3, digits squared) and input is validated at each step. On first run, it enters registration mode; on subsequent runs, it prompts for login and verifies the entered credentials.
 
 ### 🔑 Key Concepts
+
 - Validates first and last names for alphabetic input and minimum length
 - Validates username for non-empty, alphanumeric characters only
 - Prompts for password confirmation before encrypting
@@ -71,15 +76,14 @@ cmake --build .
 g++ -std=c++20 -I include src/*.cpp -o login_app
 
 ### Future Improvements
+
 - Support multiple user records in the CSV file
 - Replace custom cipher with a secure hash (e.g., SHA-256)
 - Add unit tests using Catch2 or GoogleTest
 - Implement error handling for malformed CSV lines and I/O failures
 - Refactor into classes or structs once OOP concepts are learned
 
-
 ---
-
 
 ## 🛠️ Development Environment
 
@@ -91,15 +95,16 @@ g++ -std=c++20 -I include src/*.cpp -o login_app
 - **Build System**: Simple compilation (can extend with CMake later).
 
 ### 🔧 Compilation Instructions
+
 To compile the current project:
 Using g++
 g++ -std=c++20 App1-Nnumber-Guessing-Game.cpp -o number_guess
 ./number_guess
 
-
 ## 📌 Future Planned Projects
 
 This repository is meant to evolve over time. Planned additions include:
+
 1. **System Utilities** ⚙️
    - File Management Tool (read/write/parse files)
    - Text Analyzer (word frequency, sentiment analysis basics)
@@ -111,13 +116,13 @@ This repository is meant to evolve over time. Planned additions include:
 
 ---
 
-
 ## 🌟 Contributions & Learning Goals
 
 This repository is **primarily a personal learning journey** into writing clean, maintainable, and modern **C++20 applications**.  
 However, contributions, suggestions, and improvements are always welcome!
 
 ### Learning Goals:
+
 - Apply **modern C++ idioms** instead of legacy approaches.
 - Gain fluency in dynamic memory handling (`std::vector`, smart pointers).
 - Get hands-on with tuples, ranges, lambdas, and functional-style coding in C++20.
@@ -125,15 +130,14 @@ However, contributions, suggestions, and improvements are always welcome!
 
 ---
 
-
 ## ✅ Current Status
+
 - [x] Number Guessing Game — Complete 🎉
 - [x] Login and Registration CLI Application - Complete 🎉
 - [ ] Expand into system utilities  
 - [ ] Begin more advanced application development  
 
 ---
-
 
 ## 📜 License
 This project is open-source under the **MIT License** — feel free to use, modify, and learn from it.
